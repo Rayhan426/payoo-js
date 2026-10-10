@@ -28,7 +28,7 @@
   </head>
 
 
-  <body class="min-h-screen max-w-md max-w-sm mx-auto base">
+  <body class="min-h-screen max-w-md  mx-auto base">
     <div class="logo w-[265px] mx-auto pt-32">
       <img src="./assets/Logo-full.png" alt="">
     </div>
@@ -38,15 +38,18 @@
       <div class="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow rounded-2xl">
       <div class="card-body">
         <fieldset class="fieldset">
-          <label class="label">Email</label>
-          <input type="email" class="input" placeholder="Email" />
-          <label class="label">Password</label>
-          <input type="password" class="input" placeholder="Password" />
-          <div><a class="link link-hover">Forgot password?</a></div>
-          <button class="btn btn-neutral mt-4">Login</button>
+          <label class="label text-[#080808] font-medium text-[16px]">Mobile Number</label>
+          <input type="number " id="number-field" class="input bg-base-200 rounded-full  border-none" placeholder="Enter your number" />
+          <label class="label  text-[#080808] font-medium text-[16px] mt-4">4 Digit Pin</label>
+          <input type="password" maxlength="4" id="password-field" class="input bg-base-200 rounded-full  border-none" placeholder="Enter 4 Digit Pin" />
+          <button id="login-btn" class=" bg-[#3B25C1] mt-4 text-white font-bold rounded-full py-4 px-5 text-xl cursor-pointer ">Login</button>
         </fieldset>
       </div>
     
     </div>
+
+
+
+    <script src="./login.js"></script>
   </body>
 </html>
