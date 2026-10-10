@@ -3,26 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payoo Projects</title>
+    <title>Payoo | Login</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
 <!-- daisy ui  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
 <!-- daisy ui -->
-    <style type="text/tailwindcss">
-      @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
-  </head>
-  <body>
-   <div class="text-center">
-     <h1 class="text-3xl font-bold underline text-clifford">
-      Hello world!
-    </h1>
+  <style>
+  *{
+    font-family: "Outfit", sans-serif;
+  }
+  </style>
 
-    <button class="btn">click me</button>
-   </div>
+<!-- google fonts  -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<!-- google fonts  -->
+ <!-- icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- icons -->
+  </head>
+
+
+  <body class="min-h-screen max-w-md max-w-sm mx-auto base">
+    <div class="logo w-[265px] mx-auto pt-32">
+      <img src="./assets/Logo-full.png" alt="">
+    </div>
+
+
+    <div class="form pt-10">
+      <div class="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Email</label>
+          <input type="email" class="input" placeholder="Email" />
+          <label class="label">Password</label>
+          <input type="password" class="input" placeholder="Password" />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button class="btn btn-neutral mt-4">Login</button>
+        </fieldset>
+      </div>
+    
+    </div>
   </body>
 </html>
